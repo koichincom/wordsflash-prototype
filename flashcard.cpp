@@ -32,7 +32,7 @@ void Flashcard::showCard() const
     std::cout << "Word: " << word << "\nDefinition: " << definition << "\nExample: " << example << "\n";
 }
 
-// Speak the word and definition (macOS/Linux)
+// Speak the word and definition (exclusively for Mac OS)
 void Flashcard::speak() const
 {
     std::string command = "say \"" + word + " " + definition + "\"";
